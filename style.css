@@ -119,22 +119,25 @@ main {
 .cont-row {
   flex-grow: 1;
   display: flex;
+  /* flex-wrap: wrap; */
   border-bottom: 1px solid var(--color-main);
 }
 
 #number {
-  flex: 1.5;
+  flex: 1, 1, 20%;
+  min-width: 20%;
   text-align: center;
   color: var(--color-main);
   font-size: clamp(2rem, 1rem + 10vh, 3rem);
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: var(--outline);
 }
 #name {
   
-  flex: 5.5;
-  outline: var(--outline);
+  flex: 1, 1, 80%;
+  min-width: 80%;
   text-align: left;
   font-size: clamp(2rem, 1rem + 10vh, 2rem);
   display: flex;
@@ -145,11 +148,13 @@ main {
 }
 
 #column-1 {
-  flex: 3;
+  flex: 1, 1, 40%;
+  min-width: 40%;
   display:flex;
 }
 #column-2 {
-  flex: 4;
+  flex: 1, 1, 60%;
+  min-width: 60%;
   display: flex;
   flex-direction: column;
   outline: var(--outline);
@@ -158,8 +163,7 @@ main {
 }
 
 #hexagram-uni {
-  flex-grow: 1;
-  flex-basis: 0;
+  flex-basis: 100%;
   outline: var(--outline);
   display: flex;
   flex-direction: column;
@@ -172,8 +176,7 @@ div > #hexagram-uni {
   font-size: clamp(4rem, 3rem + 10vh, 4rem);
 }
 #trigrams {
-  flex-grow: 1;
-  flex-basis: 0;
+  flex-basis: 100%;
   font-size: 1rem;
   text-transform: uppercase;
   display: flex;
