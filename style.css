@@ -204,6 +204,16 @@ div > #hexagram-uni {
 #opozit {
   border-bottom: 1px solid var(--color-main);
 }
+
+.hex-link {
+  background-color: white;
+  color: black;
+  padding: 1px 1px 1px 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
 #detail-text {
   padding: 6px;
 }
